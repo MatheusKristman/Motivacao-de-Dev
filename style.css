@@ -74,12 +74,13 @@ button:active {
     right: 50%;
     transform: translateX(-50%);
     bottom: 20px;
-    width: 350px;
+    width: 400px;
 }
 
 .copyright h3 {
     font-family: inherit;
     font-size: 24px;
+    letter-spacing: 1px;
 }
 
 .copyright .social {
@@ -119,6 +120,18 @@ button:active {
 @media screen and (max-width: 420px) {
     .title {
         font-size: 40px;
+    }
+
+    .copyright {
+        width: 100%;
+    }
+
+    .copyright h3 {
+        font-size: 20px;
+    }
+
+    .copyright .social {
+        font-size: 30px;
     }
 }
 
