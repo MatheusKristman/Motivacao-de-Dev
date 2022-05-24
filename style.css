@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #487d76;
+}
+
+.title {
+    font-size: 70px;
+    text-shadow: 3px 2px #4b4452;
+    margin-bottom: 150px;
+}
+
+.phrase {
+    display: none;
+    width: 80%;
+    font-size: 50px;
+    text-align: center;
+}
+
+button {
+    background: #ff4746;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 20px;
+    border: 3px solid black;
+    box-shadow: 0.2em 0.2em;
+    cursor: pointer;
+}
+   
+button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.25em 0.25em;
+}
+   
+button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.reload {
+    display: none;
+    margin-top: 50px;
+}
+
+.heart {
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    width: 350px;
+}
+
+.copyright h3 {
+    font-family: inherit;
+    font-size: 24px;
+}
+
+.copyright .social {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+}
+
+.copyright .social .github {
+    color: #000;
+}
+
+.copyright .social .linkedin {
+    color: #000;
+}
+
+
+
+/* medias queries */
+
+@media screen and (max-width: 650px) {
+    .title {
+        font-size: 50px;
+    }
+
+    button {
+        font-size: 17px;
+        padding: 0.4em 1.1em;
+    }
+
+    .phrase {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .title {
+        font-size: 40px;
+    }
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
